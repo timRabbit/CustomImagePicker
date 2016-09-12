@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.framework             = "CoreFoundation","Foundation","CoreGraphics","Security","UIKit"
   s.library		= "z.1.1.3","stdc++","sqlite3"
   s.subspec 'UIImagePickerController-Block' do |sp|
-    sp.source_files = 'UIImagePickerController-Block/ImagePickerBlockSample/UIImagePickerController+Block/*.{h,m,mm}'
+    sp.source_files = 'ImagePickerBlockSample/UIImagePickerController+Block/*.{h,m,mm}'
   #  sp.resources   = "Extend/**/*.{png}"
     sp.requires_arc = true
     sp.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libz, $(SDKROOT)/usr/include/libxml2', 'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++0x', 'CLANG_CXX_LIBRARY' => 'libstdc++', 'CLANG_WARN_DIRECT_OBJC_ISA_USAGE' => 'YES'}
